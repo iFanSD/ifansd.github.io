@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_37ed9719b59b407b03032975501e70fc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_37ed9719b59b407b03032975501e70fc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_37ed9719b59b407b03032975501e70fc = L.map(
+                "map_37ed9719b59b407b03032975501e70fc",
+                {
+                    center: [25.7794298, -80.2703983],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c4106ba6b04b6939f9f1dae3bba5cfe9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+            var marker_96177a1f54490246ff346182223fbc94 = L.marker(
+                [25.7466292, -80.2196987],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_1bf552dd628e77faf5d27144e503cbf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_552427e146d3b18fab08cb170e5c114f = $(`<div id="html_552427e146d3b18fab08cb170e5c114f" style="width: 100.0%; height: 100.0%;">PZAB-R-22-005</div>`)[0];
+                popup_1bf552dd628e77faf5d27144e503cbf0.setContent(html_552427e146d3b18fab08cb170e5c114f);
+            
+        
+
+        marker_96177a1f54490246ff346182223fbc94.bindPopup(popup_1bf552dd628e77faf5d27144e503cbf0)
+        ;
+
+        
+    
+    
+            marker_96177a1f54490246ff346182223fbc94.bindTooltip(
+                `<div>
+                     172 W Flagler Street, Suite B-D [Commissioner Jeffrey Watson – District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_059b6b0c040051b909cff3b137a034f7 = L.marker(
+                [25.8481899, -80.18057809999999],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_7fca327316c18716fe9c76185591f77b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7874f652b6d1e9856587b96e6912b5c2 = $(`<div id="html_7874f652b6d1e9856587b96e6912b5c2" style="width: 100.0%; height: 100.0%;">PZAB-R-22-007</div>`)[0];
+                popup_7fca327316c18716fe9c76185591f77b.setContent(html_7874f652b6d1e9856587b96e6912b5c2);
+            
+        
+
+        marker_059b6b0c040051b909cff3b137a034f7.bindPopup(popup_7fca327316c18716fe9c76185591f77b)
+        ;
+
+        
+    
+    
+            marker_059b6b0c040051b909cff3b137a034f7.bindTooltip(
+                `<div>
+                     Citywide Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2afbdceec83045ca27e955009217b64f = L.marker(
+                [25.8481899, -80.18057809999999],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_2360f038380b98c184a25c691d3405c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_650b0b2bb090da3b80d155345ca37914 = $(`<div id="html_650b0b2bb090da3b80d155345ca37914" style="width: 100.0%; height: 100.0%;">PZAB-R-22-008</div>`)[0];
+                popup_2360f038380b98c184a25c691d3405c8.setContent(html_650b0b2bb090da3b80d155345ca37914);
+            
+        
+
+        marker_2afbdceec83045ca27e955009217b64f.bindPopup(popup_2360f038380b98c184a25c691d3405c8)
+        ;
+
+        
+    
+    
+            marker_2afbdceec83045ca27e955009217b64f.bindTooltip(
+                `<div>
+                     Citywide Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c334f517aec462f660ca59d87ea5b3a = L.marker(
+                [25.8481899, -80.18057809999999],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_33b116caa5bd6eae78fd8412e71c4b86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_247b4b807473c60d63fbe50cc8a811ba = $(`<div id="html_247b4b807473c60d63fbe50cc8a811ba" style="width: 100.0%; height: 100.0%;">PZAB-R-22-009</div>`)[0];
+                popup_33b116caa5bd6eae78fd8412e71c4b86.setContent(html_247b4b807473c60d63fbe50cc8a811ba);
+            
+        
+
+        marker_6c334f517aec462f660ca59d87ea5b3a.bindPopup(popup_33b116caa5bd6eae78fd8412e71c4b86)
+        ;
+
+        
+    
+    
+            marker_6c334f517aec462f660ca59d87ea5b3a.bindTooltip(
+                `<div>
+                     Citywide Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f63f7fa6e90c7e559c43baf8741534d = L.marker(
+                [25.8096843, -80.2386226],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_3472ef5be8cc541f2f8a1f01839ab746 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf84867b8512682b5cf1c54ee484d88b = $(`<div id="html_cf84867b8512682b5cf1c54ee484d88b" style="width: 100.0%; height: 100.0%;">PZAB-R-22-010</div>`)[0];
+                popup_3472ef5be8cc541f2f8a1f01839ab746.setContent(html_cf84867b8512682b5cf1c54ee484d88b);
+            
+        
+
+        marker_1f63f7fa6e90c7e559c43baf8741534d.bindPopup(popup_3472ef5be8cc541f2f8a1f01839ab746)
+        ;
+
+        
+    
+    
+            marker_1f63f7fa6e90c7e559c43baf8741534d.bindTooltip(
+                `<div>
+                     341 NW South River Dr [Commissioner Joe Carollo - District 3] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e151a4401e29f8e4f7fb3647d35744c4 = L.marker(
+                [25.8481899, -80.18057809999999],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_fd6e13f192ff9a8d3697ec7da8cd8a41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1229c4a5290de0539e40e4323815ab3b = $(`<div id="html_1229c4a5290de0539e40e4323815ab3b" style="width: 100.0%; height: 100.0%;">PZAB-R-22-011</div>`)[0];
+                popup_fd6e13f192ff9a8d3697ec7da8cd8a41.setContent(html_1229c4a5290de0539e40e4323815ab3b);
+            
+        
+
+        marker_e151a4401e29f8e4f7fb3647d35744c4.bindPopup(popup_fd6e13f192ff9a8d3697ec7da8cd8a41)
+        ;
+
+        
+    
+    
+            marker_e151a4401e29f8e4f7fb3647d35744c4.bindTooltip(
+                `<div>
+                     Citywide Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b7acae2af6cb669b88f17ef6ca7e0c3 = L.marker(
+                [25.8481899, -80.18057809999999],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_70f53798d0d3c950db6216e7eba51a22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5885a8cd14ed20df73aef58867d77ad3 = $(`<div id="html_5885a8cd14ed20df73aef58867d77ad3" style="width: 100.0%; height: 100.0%;">PZAB-R-22-012</div>`)[0];
+                popup_70f53798d0d3c950db6216e7eba51a22.setContent(html_5885a8cd14ed20df73aef58867d77ad3);
+            
+        
+
+        marker_7b7acae2af6cb669b88f17ef6ca7e0c3.bindPopup(popup_70f53798d0d3c950db6216e7eba51a22)
+        ;
+
+        
+    
+    
+            marker_7b7acae2af6cb669b88f17ef6ca7e0c3.bindTooltip(
+                `<div>
+                     Citywide Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63d6720b2bd97815328b761c516fd0e1 = L.marker(
+                [25.8352053, -80.1893113],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_24c94a401f76141f23bbddf5822a5b02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd7a89076b7ff4781e80fb911d20cf59 = $(`<div id="html_bd7a89076b7ff4781e80fb911d20cf59" style="width: 100.0%; height: 100.0%;">PZAB-R-22-020</div>`)[0];
+                popup_24c94a401f76141f23bbddf5822a5b02.setContent(html_bd7a89076b7ff4781e80fb911d20cf59);
+            
+        
+
+        marker_63d6720b2bd97815328b761c516fd0e1.bindPopup(popup_24c94a401f76141f23bbddf5822a5b02)
+        ;
+
+        
+    
+    
+            marker_63d6720b2bd97815328b761c516fd0e1.bindTooltip(
+                `<div>
+                     Bounded by Northeast 64 Terrace to the North, Florida East Coast Railway to the East, Northeast 62 Street to the South, and Northeast 2 Avenue to the West. [Commissioner Christine King - District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab1c05f85778893b8b2ab8712b0db62c = L.marker(
+                [25.7647351, -80.2986111],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_2f5e41d20b2334f10184427229f2fe66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_787033617950da4591a5b09aac0c5be4 = $(`<div id="html_787033617950da4591a5b09aac0c5be4" style="width: 100.0%; height: 100.0%;">PZAB-R-22-021</div>`)[0];
+                popup_2f5e41d20b2334f10184427229f2fe66.setContent(html_787033617950da4591a5b09aac0c5be4);
+            
+        
+
+        marker_ab1c05f85778893b8b2ab8712b0db62c.bindPopup(popup_2f5e41d20b2334f10184427229f2fe66)
+        ;
+
+        
+    
+    
+            marker_ab1c05f85778893b8b2ab8712b0db62c.bindTooltip(
+                `<div>
+                     600 Southwest 63 Avenue, 610 Southwest 63 Avenue, 601 Southwest 63 Court, and 615 Southwest 63 Court [Commissioner Manolo Reyes - District 4] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e71fb72534a29327f91d22481951ee5b = L.marker(
+                [25.7647351, -80.2986111],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_dca71c90ad6c8ac76822b4d5c7959824 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e75b6570ae6d0ccd84586f89d3b8b37f = $(`<div id="html_e75b6570ae6d0ccd84586f89d3b8b37f" style="width: 100.0%; height: 100.0%;">PZAB-R-22-022</div>`)[0];
+                popup_dca71c90ad6c8ac76822b4d5c7959824.setContent(html_e75b6570ae6d0ccd84586f89d3b8b37f);
+            
+        
+
+        marker_e71fb72534a29327f91d22481951ee5b.bindPopup(popup_dca71c90ad6c8ac76822b4d5c7959824)
+        ;
+
+        
+    
+    
+            marker_e71fb72534a29327f91d22481951ee5b.bindTooltip(
+                `<div>
+                     600 Southwest 63 Avenue, 610 Southwest 63 Avenue, 601 Southwest 63 Court, and 615 Southwest 63 Court [Commissioner Manolo Reyes - District 4] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a4f4d78bf6904cdc1c592c21decc902 = L.marker(
+                [25.806544, -80.195483],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_2c775bec4588329a533319186a43d750 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeeadd9ec8dcfd44123a5e8d9e2e5367 = $(`<div id="html_eeeadd9ec8dcfd44123a5e8d9e2e5367" style="width: 100.0%; height: 100.0%;">PZAB-R-22-039</div>`)[0];
+                popup_2c775bec4588329a533319186a43d750.setContent(html_eeeadd9ec8dcfd44123a5e8d9e2e5367);
+            
+        
+
+        marker_7a4f4d78bf6904cdc1c592c21decc902.bindPopup(popup_2c775bec4588329a533319186a43d750)
+        ;
+
+        
+    
+    
+            marker_7a4f4d78bf6904cdc1c592c21decc902.bindTooltip(
+                `<div>
+                     3160 N. Miami Av. [Commissioner Christine King – District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_afdfdd2b1e70f258d227fea8510edf3d = L.marker(
+                [25.7449494, -80.1729862],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_f1c35f0418f0317c3c7624676ab93eaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0142e42f1b0585feecda843b1e15566a = $(`<div id="html_0142e42f1b0585feecda843b1e15566a" style="width: 100.0%; height: 100.0%;">PZAB-R-22-041</div>`)[0];
+                popup_f1c35f0418f0317c3c7624676ab93eaa.setContent(html_0142e42f1b0585feecda843b1e15566a);
+            
+        
+
+        marker_afdfdd2b1e70f258d227fea8510edf3d.bindPopup(popup_f1c35f0418f0317c3c7624676ab93eaa)
+        ;
+
+        
+    
+    
+            marker_afdfdd2b1e70f258d227fea8510edf3d.bindTooltip(
+                `<div>
+                     3501, 3505, and 3511 Rickenbacker Causeway [Commissioner Russell - District 2] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_628834c0aceae759f36094eb03fbae29 = L.marker(
+                [25.7950314, -80.2272299],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_0d6adee43f66e5429021af52c7850181 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f8b7561cb18fe54ad3dd2c5fc6497f1 = $(`<div id="html_8f8b7561cb18fe54ad3dd2c5fc6497f1" style="width: 100.0%; height: 100.0%;">PZAB-R-22-042</div>`)[0];
+                popup_0d6adee43f66e5429021af52c7850181.setContent(html_8f8b7561cb18fe54ad3dd2c5fc6497f1);
+            
+        
+
+        marker_628834c0aceae759f36094eb03fbae29.bindPopup(popup_0d6adee43f66e5429021af52c7850181)
+        ;
+
+        
+    
+    
+            marker_628834c0aceae759f36094eb03fbae29.bindTooltip(
+                `<div>
+                     1210, 1222, 1234, and 1250 Northwest 7 Avenue [Commissioner Alex Diaz de la Portilla - District 1] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d80f5eb7d668187ec756fac5ae199e79 = L.marker(
+                [25.7863578, -80.20718529999999],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_6599e5ff7d4522cff824eaa9c3f77598 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86ca6abba4baa8156d385b7a19064253 = $(`<div id="html_86ca6abba4baa8156d385b7a19064253" style="width: 100.0%; height: 100.0%;">PZAB-R-22-043</div>`)[0];
+                popup_6599e5ff7d4522cff824eaa9c3f77598.setContent(html_86ca6abba4baa8156d385b7a19064253);
+            
+        
+
+        marker_d80f5eb7d668187ec756fac5ae199e79.bindPopup(popup_6599e5ff7d4522cff824eaa9c3f77598)
+        ;
+
+        
+    
+    
+            marker_d80f5eb7d668187ec756fac5ae199e79.bindTooltip(
+                `<div>
+                     1210, 1222, 1234, and 1250 Northwest 7 Avenue  [Commissioner Christine King - District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_863b410b05f442495dcb4843ee2be03a = L.marker(
+                [25.8096843, -80.2386226],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_d51b352da8cbe85134fa68fd7f11bd7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a532888818a0e5afcfc6aff8388789f = $(`<div id="html_1a532888818a0e5afcfc6aff8388789f" style="width: 100.0%; height: 100.0%;">PZAB-R-22-045</div>`)[0];
+                popup_d51b352da8cbe85134fa68fd7f11bd7b.setContent(html_1a532888818a0e5afcfc6aff8388789f);
+            
+        
+
+        marker_863b410b05f442495dcb4843ee2be03a.bindPopup(popup_d51b352da8cbe85134fa68fd7f11bd7b)
+        ;
+
+        
+    
+    
+            marker_863b410b05f442495dcb4843ee2be03a.bindTooltip(
+                `<div>
+                     2007 SW 8 St [Commissioner Joe Carollo - District 3] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdf5c466bd2d106d36b56e0994ab8a26 = L.marker(
+                [25.7729229, -80.2271359],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_5eff44e79a5e08bc27f6f1f76185b0bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c2f45b3efbc5aea2720cb11dd566400 = $(`<div id="html_7c2f45b3efbc5aea2720cb11dd566400" style="width: 100.0%; height: 100.0%;">PZAB-R-22-046</div>`)[0];
+                popup_5eff44e79a5e08bc27f6f1f76185b0bb.setContent(html_7c2f45b3efbc5aea2720cb11dd566400);
+            
+        
+
+        marker_cdf5c466bd2d106d36b56e0994ab8a26.bindPopup(popup_5eff44e79a5e08bc27f6f1f76185b0bb)
+        ;
+
+        
+    
+    
+            marker_cdf5c466bd2d106d36b56e0994ab8a26.bindTooltip(
+                `<div>
+                     1901 West Flagler Street, Suite 1 [Commissioner Joe Carollo - District 2] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cfe8e2fe5ab6b83a515cd51cfe405a8 = L.marker(
+                [25.7616798, -80.1917902],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_0ce389c6a6129809742ed22cdde46285 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d84e0c9adb0fac89d2b14de447e617a = $(`<div id="html_9d84e0c9adb0fac89d2b14de447e617a" style="width: 100.0%; height: 100.0%;">PZAB-R-22-055</div>`)[0];
+                popup_0ce389c6a6129809742ed22cdde46285.setContent(html_9d84e0c9adb0fac89d2b14de447e617a);
+            
+        
+
+        marker_4cfe8e2fe5ab6b83a515cd51cfe405a8.bindPopup(popup_0ce389c6a6129809742ed22cdde46285)
+        ;
+
+        
+    
+    
+            marker_4cfe8e2fe5ab6b83a515cd51cfe405a8.bindTooltip(
+                `<div>
+                     2291 NW 36 Street [Commissioner Alex Diaz de La Portilla - District 1] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e0930c78ec1cde14be5ed71a0136558 = L.marker(
+                [25.7635188, -80.2088449],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_dde51f2825e0a312ec22bc19771415c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89a5c181d9b5884614bc73835c6325f5 = $(`<div id="html_89a5c181d9b5884614bc73835c6325f5" style="width: 100.0%; height: 100.0%;">PZAB-R-22-058</div>`)[0];
+                popup_dde51f2825e0a312ec22bc19771415c9.setContent(html_89a5c181d9b5884614bc73835c6325f5);
+            
+        
+
+        marker_5e0930c78ec1cde14be5ed71a0136558.bindPopup(popup_dde51f2825e0a312ec22bc19771415c9)
+        ;
+
+        
+    
+    
+            marker_5e0930c78ec1cde14be5ed71a0136558.bindTooltip(
+                `<div>
+                     1028 SW 9 Avenue [Commissioner Joe Carollo - District 3] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69ae64ea9b764e9aee92639b4dada030 = L.marker(
+                [25.8141245, -80.240353],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_ac0889bb08e0944f0efdd708311bea4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08404c49297bb9552b7ce84202def4b8 = $(`<div id="html_08404c49297bb9552b7ce84202def4b8" style="width: 100.0%; height: 100.0%;">PZAB-R-22-059</div>`)[0];
+                popup_ac0889bb08e0944f0efdd708311bea4f.setContent(html_08404c49297bb9552b7ce84202def4b8);
+            
+        
+
+        marker_69ae64ea9b764e9aee92639b4dada030.bindPopup(popup_ac0889bb08e0944f0efdd708311bea4f)
+        ;
+
+        
+    
+    
+            marker_69ae64ea9b764e9aee92639b4dada030.bindTooltip(
+                `<div>
+                     1960 and 1970 Northwest 27 Avenue Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8dad6745ca3f658069b0687b141abccb = L.marker(
+                [25.8141245, -80.240353],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_9017d65a2e604f9815c4582684607170 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02cd22d7aa75957abeb1f0bcc9860a84 = $(`<div id="html_02cd22d7aa75957abeb1f0bcc9860a84" style="width: 100.0%; height: 100.0%;">PZAB-R-22-060</div>`)[0];
+                popup_9017d65a2e604f9815c4582684607170.setContent(html_02cd22d7aa75957abeb1f0bcc9860a84);
+            
+        
+
+        marker_8dad6745ca3f658069b0687b141abccb.bindPopup(popup_9017d65a2e604f9815c4582684607170)
+        ;
+
+        
+    
+    
+            marker_8dad6745ca3f658069b0687b141abccb.bindTooltip(
+                `<div>
+                     1960 and 1970 Northwest 27 Avenue Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41376b1c89ad5cc65fadf3088fe58214 = L.marker(
+                [25.8042563, -80.1902391],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_eab24727251deb84961275b58f5415fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9523cf0aaff846212ad8f7a3ce729bcb = $(`<div id="html_9523cf0aaff846212ad8f7a3ce729bcb" style="width: 100.0%; height: 100.0%;">PZAB-R-22-061</div>`)[0];
+                popup_eab24727251deb84961275b58f5415fe.setContent(html_9523cf0aaff846212ad8f7a3ce729bcb);
+            
+        
+
+        marker_41376b1c89ad5cc65fadf3088fe58214.bindPopup(popup_eab24727251deb84961275b58f5415fe)
+        ;
+
+        
+    
+    
+            marker_41376b1c89ad5cc65fadf3088fe58214.bindTooltip(
+                `<div>
+                     South of Northeast 36th Street, North of Northeast 29th Street, East of North Miami Avenue and West of the Florida East Coast Railroad (FEC) right-of-way; excluding certain properties located along Northeast 29th Street. Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6d512f13782243fc8ff018786c6609c = L.marker(
+                [25.7435508, -80.1719419],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_a6577515a70d140dab9756c47e5c19fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad24bc69b517fcf0d968724683ca4acd = $(`<div id="html_ad24bc69b517fcf0d968724683ca4acd" style="width: 100.0%; height: 100.0%;">PZAB-R-22-072</div>`)[0];
+                popup_a6577515a70d140dab9756c47e5c19fe.setContent(html_ad24bc69b517fcf0d968724683ca4acd);
+            
+        
+
+        marker_b6d512f13782243fc8ff018786c6609c.bindPopup(popup_a6577515a70d140dab9756c47e5c19fe)
+        ;
+
+        
+    
+    
+            marker_b6d512f13782243fc8ff018786c6609c.bindTooltip(
+                `<div>
+                     3501 Rickenbacker Causeway [Commissioner Russell - District 2] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b9b293df83de658a7115d53761ed808 = L.marker(
+                [38.9071923, -77.0368707],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_acf5696333d2fa67a4d3e23498717ee9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85b963c76d6030107fe4b8ebfb2bb43b = $(`<div id="html_85b963c76d6030107fe4b8ebfb2bb43b" style="width: 100.0%; height: 100.0%;">PZAB-R-22-073</div>`)[0];
+                popup_acf5696333d2fa67a4d3e23498717ee9.setContent(html_85b963c76d6030107fe4b8ebfb2bb43b);
+            
+        
+
+        marker_3b9b293df83de658a7115d53761ed808.bindPopup(popup_acf5696333d2fa67a4d3e23498717ee9)
+        ;
+
+        
+    
+    
+            marker_3b9b293df83de658a7115d53761ed808.bindTooltip(
+                `<div>
+                     located at 3424 and 3442 Southwest 37 Avenue, 3714 and 3718 Washington Avenue, and 3719 Thomas Avenue, 3475, 3479 and 3481 Hibiscus Street, 3475, and 3435 and William Avenue, 3452 3440, 3430 and 3460 Thomas Avenue, 3456 Elizabeth Street, 3135, 3145, 3153, 3163, and 3173 Mundy Street, and 3645 and 3633 Day Avenue [Commissioner Ken Russell - District 2] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5575d6e11d3c32137517e227fd7670d = L.marker(
+                [25.7276845, -80.2337652],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_53cb3227eda7851b4142cf8e26a1b573 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_047dd34f9907a5bdd2413b5da5d76a86 = $(`<div id="html_047dd34f9907a5bdd2413b5da5d76a86" style="width: 100.0%; height: 100.0%;">PZAB-R-22-076</div>`)[0];
+                popup_53cb3227eda7851b4142cf8e26a1b573.setContent(html_047dd34f9907a5bdd2413b5da5d76a86);
+            
+        
+
+        marker_d5575d6e11d3c32137517e227fd7670d.bindPopup(popup_53cb3227eda7851b4142cf8e26a1b573)
+        ;
+
+        
+    
+    
+            marker_d5575d6e11d3c32137517e227fd7670d.bindTooltip(
+                `<div>
+                     4000 Grand Avenue [Commissioner Ken Russell – Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e300fd8a72bb344d9e6af24af00cac8 = L.marker(
+                [25.8124077, -80.19635819999999],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_9792f672ca4429dd56f3aae2a6f9bbef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b894fee2ed15b903db9f0169a3bbdfe9 = $(`<div id="html_b894fee2ed15b903db9f0169a3bbdfe9" style="width: 100.0%; height: 100.0%;">PZAB-R-22-077</div>`)[0];
+                popup_9792f672ca4429dd56f3aae2a6f9bbef.setContent(html_b894fee2ed15b903db9f0169a3bbdfe9);
+            
+        
+
+        marker_4e300fd8a72bb344d9e6af24af00cac8.bindPopup(popup_9792f672ca4429dd56f3aae2a6f9bbef)
+        ;
+
+        
+    
+    
+            marker_4e300fd8a72bb344d9e6af24af00cac8.bindTooltip(
+                `<div>
+                     , 39 Northwest 39 Street, 40 Northwest 39 Street, and 48 Northwest 39 Street [Commissioner Christine King - District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23be1b3cb61a083cc1ee638a1650050d = L.marker(
+                [25.8435773, -80.196863],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_9dc3025219d09203c513887ffd337b7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_928e8a2e7e3a8c0136c26e2a36c0321a = $(`<div id="html_928e8a2e7e3a8c0136c26e2a36c0321a" style="width: 100.0%; height: 100.0%;">PZAB-R-23-004</div>`)[0];
+                popup_9dc3025219d09203c513887ffd337b7f.setContent(html_928e8a2e7e3a8c0136c26e2a36c0321a);
+            
+        
+
+        marker_23be1b3cb61a083cc1ee638a1650050d.bindPopup(popup_9dc3025219d09203c513887ffd337b7f)
+        ;
+
+        
+    
+    
+            marker_23be1b3cb61a083cc1ee638a1650050d.bindTooltip(
+                `<div>
+                     7401, 7409, and 7357 Northwest Miami Court, and 7340 and 7450 North Miami Avenue [Commissioner Christine King - District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08638280b535ccb5b9437c7104ed4dcb = L.marker(
+                [25.821393, -80.190201],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_78cd66bf1fe3d7de0134ea84b63c0015 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57098a4ad0e7379f2666f25d7b201f78 = $(`<div id="html_57098a4ad0e7379f2666f25d7b201f78" style="width: 100.0%; height: 100.0%;">PZAB-R-23-002</div>`)[0];
+                popup_78cd66bf1fe3d7de0134ea84b63c0015.setContent(html_57098a4ad0e7379f2666f25d7b201f78);
+            
+        
+
+        marker_08638280b535ccb5b9437c7104ed4dcb.bindPopup(popup_78cd66bf1fe3d7de0134ea84b63c0015)
+        ;
+
+        
+    
+    
+            marker_08638280b535ccb5b9437c7104ed4dcb.bindTooltip(
+                `<div>
+                     4949 NE 2 Avenue [Commissioner Christine King - District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40eb3f6c10f5e9d1e4a9e5488d51bba7 = L.marker(
+                [25.798431, -80.195585],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_77063ac17bfd3035a0146f09bcec4f83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83c7850deb43fdb3db3a117342482b60 = $(`<div id="html_83c7850deb43fdb3db3a117342482b60" style="width: 100.0%; height: 100.0%;">PZAB-R-23-005</div>`)[0];
+                popup_77063ac17bfd3035a0146f09bcec4f83.setContent(html_83c7850deb43fdb3db3a117342482b60);
+            
+        
+
+        marker_40eb3f6c10f5e9d1e4a9e5488d51bba7.bindPopup(popup_77063ac17bfd3035a0146f09bcec4f83)
+        ;
+
+        
+    
+    
+            marker_40eb3f6c10f5e9d1e4a9e5488d51bba7.bindTooltip(
+                `<div>
+                     2217 NW Miami Court [Commissioner Christine King - District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_029a04aff9d66204a67ac20f349a1ff7 = L.marker(
+                [25.795972, -80.19605899999999],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_e786b4a8ead0d34ac6faec737e524f93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e4d63690185a354e7ea872282604f48 = $(`<div id="html_1e4d63690185a354e7ea872282604f48" style="width: 100.0%; height: 100.0%;">PZAB-R-23-006</div>`)[0];
+                popup_e786b4a8ead0d34ac6faec737e524f93.setContent(html_1e4d63690185a354e7ea872282604f48);
+            
+        
+
+        marker_029a04aff9d66204a67ac20f349a1ff7.bindPopup(popup_e786b4a8ead0d34ac6faec737e524f93)
+        ;
+
+        
+    
+    
+            marker_029a04aff9d66204a67ac20f349a1ff7.bindTooltip(
+                `<div>
+                     2010 NW Miami Ct [Commissioner Christine King - District 5] Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_860a5b7f8fa9a0874914156dfc740fdd = L.marker(
+                [25.7616798, -80.1917902],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_aa4322d494c06d78a611b20d1daf5966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c94fb214cc535c60ba212b89e25dbd6c = $(`<div id="html_c94fb214cc535c60ba212b89e25dbd6c" style="width: 100.0%; height: 100.0%;">PZAB-R-23-014</div>`)[0];
+                popup_aa4322d494c06d78a611b20d1daf5966.setContent(html_c94fb214cc535c60ba212b89e25dbd6c);
+            
+        
+
+        marker_860a5b7f8fa9a0874914156dfc740fdd.bindPopup(popup_aa4322d494c06d78a611b20d1daf5966)
+        ;
+
+        
+    
+    
+            marker_860a5b7f8fa9a0874914156dfc740fdd.bindTooltip(
+                `<div>
+                     City of Miami Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7585f9297353a6fa752542042690b28 = L.marker(
+                [25.7616798, -80.1917902],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_da034e33ea97d7d6b05acb811133ee0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e176e8606e3ca6fe9ae8f89270df0fa0 = $(`<div id="html_e176e8606e3ca6fe9ae8f89270df0fa0" style="width: 100.0%; height: 100.0%;">PZAB-R-23-015</div>`)[0];
+                popup_da034e33ea97d7d6b05acb811133ee0f.setContent(html_e176e8606e3ca6fe9ae8f89270df0fa0);
+            
+        
+
+        marker_b7585f9297353a6fa752542042690b28.bindPopup(popup_da034e33ea97d7d6b05acb811133ee0f)
+        ;
+
+        
+    
+    
+            marker_b7585f9297353a6fa752542042690b28.bindTooltip(
+                `<div>
+                     City of Miami Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f0bd6f8af3726c2eb958b13477060ff = L.marker(
+                [25.7389767, -80.2544068],
+                {}
+            ).addTo(map_37ed9719b59b407b03032975501e70fc);
+        
+    
+        var popup_164ab0143c6373fcfc936554188786fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdc040a185be9fd77f6bf5879a54e086 = $(`<div id="html_cdc040a185be9fd77f6bf5879a54e086" style="width: 100.0%; height: 100.0%;">PZAB-R-23-016</div>`)[0];
+                popup_164ab0143c6373fcfc936554188786fe.setContent(html_cdc040a185be9fd77f6bf5879a54e086);
+            
+        
+
+        marker_9f0bd6f8af3726c2eb958b13477060ff.bindPopup(popup_164ab0143c6373fcfc936554188786fe)
+        ;
+
+        
+    
+    
+            marker_9f0bd6f8af3726c2eb958b13477060ff.bindTooltip(
+                `<div>
+                     , 3700 Southwest 28 Street; Miami,FL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
